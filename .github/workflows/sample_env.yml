@@ -6,7 +6,7 @@ jobs:
     env:
       BRANCH: main # BRANCHという変数に「main」という値を入れる
     steps:
-      - run: echo "${BRANCH}"
+      - run: echo "${BRANCH}" # シェルコマンド内で参照する　env: に定義された変数は、Linux の環境変数として設定される
       - uses: actions/checkout@v4
         with:
           ref: ${{ env.BRANCH }}
