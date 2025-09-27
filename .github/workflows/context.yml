@@ -7,3 +7,4 @@ jobs:
       - run: echo "${{ github.actor }}"
       - run: echo "hello"
       - run: echo "${{ github.event.pull_request.title }}"
+      - run: echo "${{ runner.os }}"
